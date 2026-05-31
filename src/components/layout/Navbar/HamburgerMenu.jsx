@@ -1,10 +1,20 @@
-const HamburgerMenu = () => {
+const HamburgerMenu = ({ linkItems, setIsHamMenuOpen }) => {
   return (
-    <div className="w-full bg-white px-8">
-      <h3>Home</h3>
-      <h3>Collections</h3>
-      <h3>About</h3>
-    </div>
+    <button
+      className="w-full bg-white px-8 pb-8 pt-4 flex flex-col gap-2 md:hidden border-t border-gray-400"
+      onClick={() => {
+        setIsHamMenuOpen(false);
+      }}
+    >
+      {linkItems.map((el, idx) => {
+        return (
+          <div className=" py-3 flex items-center justify-between" key={idx}>
+            <span>{el.title}</span>
+            <span>{">"}</span>
+          </div>
+        );
+      })}
+    </button>
   );
 };
 
