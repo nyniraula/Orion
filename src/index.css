@@ -5,6 +5,18 @@
 @theme {
   --font-sans: "DM Sans", sans-serif;
   --font-syne: "Syne", sans-serif;
+
+  --animate-slide-down: slide-down 0.3s ease-in-out both;
+  @keyframes slide-down {
+    0% {
+      opacity: 0;
+      transform: translateY(-1rem);
+    }
+    100% {
+      opacity: 100%;
+      transform: translateY(0);
+    }
+  }
 }
 
 html,
