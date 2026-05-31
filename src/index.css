@@ -6,3 +6,8 @@
   --font-sans: "DM Sans", sans-serif;
   --font-syne: "Syne", sans-serif;
 }
+
+html,
+body {
+  background-color: #1e1e1e;
+}
