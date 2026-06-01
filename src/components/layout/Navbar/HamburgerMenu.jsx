@@ -1,7 +1,7 @@
 const HamburgerMenu = ({ linkItems, setIsHamMenuOpen }) => {
   return (
     <button
-      className="w-full bg-white px-8 pb-8 pt-4 flex flex-col gap-2 md:hidden border-t border-gray-400 animate-slide-down"
+      className="w-full bg-white px-8 pb-8 pt-4 flex flex-col gap-2 md:hidden  animate-slide-down"
       onClick={() => {
         setIsHamMenuOpen(false);
       }}
